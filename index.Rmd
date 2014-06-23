@@ -1,0 +1,61 @@
+---
+title       : Exploring mtcars
+subtitle    : Create the regression model in one mouse click
+author      : Pavel Burdanov
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Motivation
+
+All of you remember the Regression Models Course Project
+where you tested different variable sets for the regression model...
+
+```{r} 
+fit <- lm(mpg~cyl+hp+wt+am, data=mtcars)
+summary(fit)
+```
+
+
+I've found this process very tedious and have developed
+the automated solution for this.
+
+You can select the outcome and predictors and instantly run the model
+without a line of R code.
+
+Now you can add variables to your model in one mouse click!
+
+---
+
+## Solution
+
+https://burdanovp.shinyapps.io/expmtcars
+
+<iframe src="https://burdanovp.shinyapps.io/expmtcars"></iframe>
+
+---
+
+## Future Directions
+
+- More output
+
+- Ability to explore other datasets
+
+- Variable interactions
+
+- Model comparison with ANOVA
+
+- Other types of regression models
+
+- ???????
+
+- PROFIT
+
+--- .thank-you-slide
+
+## Thank you!
